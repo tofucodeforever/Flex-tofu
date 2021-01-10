@@ -173,7 +173,7 @@
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
       
-      <ul class="social">
+      <ul class="list social">
         {% for name, link in SOCIAL %}
           <li>
             <a {% if name == 'mastodon' %}rel="me"{% endif %} class="sc-{{ name }}" href="{{ link }}" target="_blank">
