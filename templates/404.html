@@ -1,0 +1,16 @@
+{% if PLUGINS and 'tipue_search' in PLUGINS %}
+
+{% extends "base.html" %}
+
+{% block title %}404 Page not found{% endblock %}
+
+{% block content %}
+<article class="single">
+    <h2> 404 Page Note Found </h2>  
+    <div> Try a search </div>
+    <form class="navbar-search" action="/search.html" role="search">
+      <input type="text" name="q" id="tipue_search_input" placeholder="{{ _('Search...') }}">
+    </form>
+</article>
+{% endblock %}
+{% endif %}
